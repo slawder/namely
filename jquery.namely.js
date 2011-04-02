@@ -13,31 +13,29 @@ http://www.lawderberry.com/namely
 */
 
 (function($){
-    $.fn.extend({ 
-        namely: function() {
-            //Iterate over the current set of matched elements
-            return this.each(function() {
-                //code to be inserted here
-                $(this).blur(function(){
-                  var txt = $(this).val();
-                  //split txt into words
-                  var arr = txt.split(" ");
-                  var x = 0;
-                  for (x in arr){
-                    var str = arr[x];
-                    var firstLetter = str.substr(0, 1);
-                    var rest = str.substr(1);
-                    //if one letter is capp in rest of string leave it
-                    var y = rest.split(/[A-Z]/g);
-                    if(y.length > 2) {
-                      rest = rest.toLowerCase();
-                    } 
-                    arr[x] = firstLetter.toUpperCase() + rest;
-                  }
-                  txt = arr.join(" ");
-                  $(this).val(txt);
-                });
-            });
-        }
+  $.fn.extend({ 
+      namely: function() {
+        return this.each(function() {
+          $(this).blur(function(){
+            var txt = $(this).val();
+            //split txt into words
+            var arr = txt.split(" ");
+            var x = 0;
+            for (x in arr){
+              var str = arr[x];
+              var firstLetter = str.substr(0, 1);
+              var rest = str.substr(1);
+              //if one letter is capp in rest of string leave it
+              var y = rest.split(/[A-Z]/g);
+              if(y.length > 2) {
+                rest = rest.toLowerCase();
+              } 
+              arr[x] = firstLetter.toUpperCase() + rest;
+            }
+            txt = arr.join(" ");
+            $(this).val(txt);
+          });
+        });
+      }
     });
 })(jQuery);
