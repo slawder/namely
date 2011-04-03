@@ -15,8 +15,8 @@ How To Use:
 -----------------------
   
 Copy into your &lt;head&gt;
-        &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;<br/>
-        &lt;script src="/scripts/jquery.namely.min.js" type="text/javascript"&gt;&lt;/script&gt;     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+        <script src="/scripts/jquery.namely.min.js" type="text/javascript"></script>   
 
 Add jQuery selector for your desired inputs:
 
