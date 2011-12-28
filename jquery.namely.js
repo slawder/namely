@@ -10,6 +10,9 @@ Requires: jQuery v1.3+
 
 http://www.lawderberry.com/namely
 
+Includes:
+Cross-Browser Split 1.0.1 (c) Steven Levithan <stevenlevithan.com>; MIT License An ECMA-compliant, uniform cross-browser split method
+
 */
 
 

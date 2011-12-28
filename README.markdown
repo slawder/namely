@@ -7,6 +7,8 @@ Want to standardize you input field names so you don't get things like "JOHn DoE
 
 CSS tweaks only change the presentation, so when submitted, the values still look bad. Backend solutions only grab the first letters of names, so MCLONDON would become McLondon. Namely address both problems in a simple, lightweight plugin. 
 
+Works on IE7+, Firefox, Safari, Chrome.
+
 Try It Out:
 -----------------------
 [Demo](http://www.lawderberry.com/namely "Demo")
